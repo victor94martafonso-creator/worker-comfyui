@@ -1,3 +1,37 @@
 {
-  "tests": []
+  "tests": [
+    {
+      "name": "smoke_test",
+      "input": {
+        "workflow": {
+          "1": {
+            "inputs": {
+              "width": 64,
+              "height": 64,
+              "batch_size": 1,
+              "color": 0
+            },
+            "class_type": "EmptyImage",
+            "_meta": {
+              "title": "Empty Image"
+            }
+          },
+          "2": {
+            "inputs": {
+              "filename_prefix": "smoke",
+              "images": [
+                "1",
+                0
+              ]
+            },
+            "class_type": "SaveImage",
+            "_meta": {
+              "title": "Save Image"
+            }
+          }
+        }
+      },
+      "timeout": 10000
+    }
+  ]
 }
