@@ -1,5 +1,5 @@
 runpod_worker_comfy:
-  base_path: /runpod-volume
+  base_path: /runpod-volume/ComfyUI
   checkpoints: models/checkpoints/
   clip: models/clip/
   clip_vision: models/clip_vision/
@@ -10,3 +10,36 @@ runpod_worker_comfy:
   upscale_models: models/upscale_models/
   vae: models/vae/
   unet: models/unet/
+  diffusion_models: models/diffusion_models/
+  text_encoders: models/text_encoders/
+  model_patches: models/model_patches/
+  audio_encoders: models/audio_encoders/
+  style_models: models/style_models/
+  gligen: models/gligen/
+  hypernetworks: models/hypernetworks/
+  photomaker: models/photomaker/
+  classifiers: models/classifiers/
+  insightface: models/insightface/
+  facerestore_models: models/facerestore_models/
+  facedetection: models/facedetection/
+  ultralytics: models/ultralytics/
+  sams: models/sams/
+
+# Compatibilite ascendante : volume dont les modeles sont a la racine
+runpod_worker_comfy_flat:
+  base_path: /runpod-volume
+  checkpoints: models/checkpoints/
+  clip: models/clip/
+  clip_vision: models/clip_vision/
+  controlnet: models/controlnet/
+  embeddings: models/embeddings/
+  loras: models/loras/
+  upscale_models: models/upscale_models/
+  vae: models/vae/
+  unet: models/unet/
+  diffusion_models: models/diffusion_models/
+  text_encoders: models/text_encoders/
+  model_patches: models/model_patches/
+  audio_encoders: models/audio_encoders/
+  insightface: models/insightface/
+  facerestore_models: models/facerestore_models/
